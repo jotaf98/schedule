@@ -29,7 +29,8 @@ function schedule(func, varargin)
 %
 %
 %   Example 1:
-%    Suppose you have a training function that takes the following syntax:
+%    Suppose you have a training function that takes the following syntax
+%    (by using vl_argparse):
 %
 %     train('alpha',1, 'beta','X', 'train.gpus',1, 'expDir', '/data/exp1');
 %
