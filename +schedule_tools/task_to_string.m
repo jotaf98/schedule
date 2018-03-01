@@ -53,11 +53,11 @@ function str = value_to_string(value)
     if isnumeric(value)
       str = num2str(value);
     else
-      error('Unsupported value.');
+      str = class(value);  % use class name as string representation
     end
   elseif isempty(value)
     str = '[]';
   else
-    error('Only numeric, string and function handle arguments are supported.');
+    error('Only numeric, string, function handle and scalar class instance are supported as arguments.');
   end
 end
